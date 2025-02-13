@@ -1,20 +1,11 @@
 import { useState } from "react";
 import AppBar from "../AppBar";
 import componentList from "../data/components"
-import {  useParams } from "react-router-dom";
-// import { useNavigate } from "react-router-dom";
+
 const ComponentSidebar = () => {
 
     const [selectedComponent, setSelectedComponent] = useState(componentList[0]);
     
-    // const navigate = useNavigate();
-    // const handleComponentSelect = (comp: any) =>{
-    //     setSelectedComponent(comp);
-    //     navigate(comp.href)
-    // }
-
-    // const navigate = useNavigate();
-    const { id } = useParams();
     return (
         <div className=" bg-black min-h-screen text-white">
             <div>
@@ -27,7 +18,7 @@ const ComponentSidebar = () => {
                     <ul>
                         {componentList.map((comp) => {
                             return (
-                                <li key={comp.id} onClick={() => setSelectedComponent(componentList.find((comp) => comp.id === id) || componentList[0])} className={`cursor-pointer ${id === comp.id ? 'text-blue-500' : 'text-white'}`}>
+                                <li key={comp.id} onClick={() => setSelectedComponent(comp)} className={`cursor-pointer ${selectedComponent.id === comp.id ? 'text-blue-500' : 'text-white'}`}>
                                     {comp.type}
                                 </li>
                             )
