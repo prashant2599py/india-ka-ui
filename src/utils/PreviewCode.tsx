@@ -26,7 +26,7 @@ const PreviewCode: React.FC<PreviewCodeProps> = ({ previewContent, codeContent, 
       </div>
 
       <div className='flex justify-center items-center mt-8'>
-          {showPreview ? <div >{previewContent}</div> : <pre className='bg-gray-700 p-2'>{codeContent}</pre>}    
+          {showPreview ? <div >{previewContent}</div> : <pre className='bg-gray-700 p-2 w-full overflow-auto'>{codeContent}</pre>}    
       </div>
       
       <div className='flex justify-center'>

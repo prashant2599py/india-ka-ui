@@ -13,7 +13,7 @@ const ComponentSidebar = () => {
             </div>
             <div className="flex h-screen">
                 {/* {SideBar} */}
-                <div className="w-1/5 p-4 border-r border-gray-800">
+                <div className="w-1/5 p-4 border-r border-gray-200 pl-10">
                     <h2 className="text-xl font-semibold mb-4">Components</h2>
                     <ul>
                         {componentList.map((comp) => {
