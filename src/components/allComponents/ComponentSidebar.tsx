@@ -11,7 +11,7 @@ const ComponentSidebar = () => {
             <div>
                 <AppBar />
             </div>
-            <div className="flex h-screen">
+            <div className="flex">
                 {/* {SideBar} */}
                 <div className="w-1/5 p-4 border-r border-gray-200 pl-10">
                     <h2 className="text-xl font-semibold mb-4">Components</h2>

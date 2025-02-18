@@ -30,7 +30,7 @@ const PreviewCode: React.FC<PreviewCodeProps> = ({ previewContent, codeContent, 
       </div>
       
       <div className='flex justify-center'>
-        {description && <p className='mt-2 text-sm text-gray-600'>{description}</p>}
+        {description && <p className='mt-8 text-sm text-gray-600'>{description}</p>}
       </div>
 
     </div>

@@ -3,7 +3,7 @@ import AppBar from "../AppBar";
 
 const Examples = () => {
   return (
-    <div className=" bg-black min-h-screen text-white">
+    <div className=" bg-black h-screen text-white">
       <div>
         <AppBar />
       </div>

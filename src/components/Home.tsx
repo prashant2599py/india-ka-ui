@@ -9,7 +9,7 @@ const Home = () => {
         navigate('/examples')
     }
     return (
-        <div className="bg-black min-h-screen">
+        <div className="bg-black h-screen">
             <div>
                 <AppBar />
             </div>
