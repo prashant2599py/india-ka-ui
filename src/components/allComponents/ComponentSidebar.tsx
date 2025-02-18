@@ -1,6 +1,7 @@
 import { useState } from "react";
 import AppBar from "../AppBar";
 import componentList from "../data/components"
+import { motion } from "framer-motion";
 
 const ComponentSidebar = () => {
 
@@ -19,7 +20,13 @@ const ComponentSidebar = () => {
                         {componentList.map((comp) => {
                             return (
                                 <li key={comp.id} onClick={() => setSelectedComponent(comp)} className={`cursor-pointer ${selectedComponent.id === comp.id ? 'text-blue-500' : 'text-white'}`}>
-                                    {comp.type}
+                                    <motion.div
+                                        whileHover={{scale: 0.9, color: 'white'}}
+                                        transition={{ duration: 0.2 }}
+                                        className="text-gray-500"
+                                    >
+                                        {comp.type}
+                                    </motion.div>
                                 </li>
                             )
                         })}

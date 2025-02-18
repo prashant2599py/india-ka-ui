@@ -12,7 +12,7 @@ const PreviewCode: React.FC<PreviewCodeProps> = ({ previewContent, codeContent, 
     <div className='border p-4 h-72 w-1/2 mt-8 rounded-xl '>
       <div className='flex pb-2'>
           <div 
-            className={`cursor-pointer ${showPreview ? 'font-bold' : ''}`}
+            className={`cursor-pointer ${showPreview ? 'text-gray-400' : 'text-white'}`}
             onClick={() => setShowPreview(true)}
           >
             Preview
