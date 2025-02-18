@@ -1,16 +1,19 @@
-import AppBar from "../AppBar";
-
+import AvatarExample from "./avatar/AvatarExample";
+import ButtonExample from "./button/ButtonExample";
 
 const Examples = () => {
   return (
-    <div className=" bg-black h-screen text-white">
+    <div>
+       <div className="mt-8">
+        <h2 className="text-3xl font-semibold">Examples</h2>
+        <hr className="mt-4" />
+      </div>
       <div>
-        <AppBar />
+        <AvatarExample />
       </div>
-      <div className="text-3xl ml-4 font-bold mt-8">
-        Examples
+      <div>
+        <ButtonExample />
       </div>
-      
     </div>
   )
 }

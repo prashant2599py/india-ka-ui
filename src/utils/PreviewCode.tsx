@@ -9,7 +9,7 @@ interface PreviewCodeProps {
 const PreviewCode: React.FC<PreviewCodeProps> = ({ previewContent, codeContent, description }) => {
   const [showPreview, setShowPreview] = useState(true);
   return (
-    <div className='border p-4 h-96 w-1/2 mt-12 rounded-xl '>
+    <div className='border p-4 h-72 w-1/2 mt-8 rounded-xl '>
       <div className='flex pb-2'>
           <div 
             className={`cursor-pointer ${showPreview ? 'font-bold' : ''}`}

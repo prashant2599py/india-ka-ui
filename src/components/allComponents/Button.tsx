@@ -1,4 +1,6 @@
 import PreviewCode from "../../utils/PreviewCode"
+import ButtonExample from "../examples/button/ButtonExample";
+// import Examples from "../examples/Examples";
 
 const Button = () => {
 
@@ -21,6 +23,10 @@ const Button = () => {
               codeContent={code}
               description="This is a simple button  component"
           />
+      </div>
+
+      <div>
+        <ButtonExample />
       </div>
     </div>
   )
